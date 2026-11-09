@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Learn Indonesian with Firyal</title>
-<meta name="description" content="Learn Indonesian online with Firyal, an experienced Indonesian tutor and engineer. Private and small group lessons for international learners.">
+<title>Learn Indonesian with Firyal | Online Indonesian Tutor</title>
+<meta name="description" content="Learn Indonesian online with Firyal, an experienced Indonesian tutor and engineer. Private and group Indonesian lessons for international learners.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,8 +40,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .container {
@@ -63,7 +63,6 @@ nav {
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 21px;
-  font-weight: 500;
 }
 
 .nav-links {
@@ -100,7 +99,7 @@ nav {
   padding-bottom: 4px;
 }
 
-/* TYPOGRAPHY */
+/* COMMON */
 
 .eyebrow {
   font-size: 10px;
@@ -108,6 +107,11 @@ nav {
   text-transform: uppercase;
   color: var(--olive);
   font-weight: 600;
+}
+
+section {
+  padding: 100px 0;
+  border-top: 1px solid var(--line);
 }
 
 .section-top {
@@ -179,11 +183,6 @@ nav {
 
 /* ABOUT */
 
-section {
-  padding: 100px 0;
-  border-top: 1px solid var(--line);
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: .85fr 1.15fr;
@@ -191,17 +190,17 @@ section {
   align-items: center;
 }
 
-.about-image-placeholder {
+.about-placeholder {
   min-height: 470px;
   background: #e9e7df;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: #858477;
+  padding: 20px;
   font-size: 11px;
   letter-spacing: 2px;
-  padding: 20px;
 }
 
 .about-content h2 {
@@ -286,7 +285,7 @@ section {
   margin-right: 12px;
 }
 
-/* LEARNING PREVIEW */
+/* PREVIEW */
 
 .preview-grid {
   display: grid;
@@ -363,10 +362,9 @@ footer {
   color: var(--muted);
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 
 @media(max-width: 760px) {
-
   .container {
     width: 88%;
   }
@@ -405,7 +403,7 @@ footer {
     height: 380px;
   }
 
-  .about-image-placeholder {
+  .about-placeholder {
     min-height: 330px;
   }
 
@@ -426,7 +424,6 @@ footer {
     gap: 10px;
   }
 }
-
 </style>
 </head>
 
@@ -448,13 +445,10 @@ footer {
 <!-- HERO -->
 
 <header class="hero container">
-
   <div class="hero-grid">
 
     <div>
-      <div class="eyebrow">
-        Indonesian Language Tutoring
-      </div>
+      <div class="eyebrow">Indonesian Language Tutoring</div>
 
       <h1>
         Learn Indonesian,
@@ -467,13 +461,8 @@ footer {
         cultural insights. For curious learners at every level.
       </p>
 
-      <a href="#classes" class="button">
-        Explore Classes ↗
-      </a>
-
-      <a href="#about" class="text-link">
-        Meet Your Tutor
-      </a>
+      <a href="#classes" class="button">Explore Classes ↗</a>
+      <a href="#about" class="text-link">Meet Your Tutor</a>
 
       <div class="hero-note">
         BEGINNER · INTERMEDIATE · ADVANCED
@@ -481,30 +470,25 @@ footer {
     </div>
 
     <img
-      src="firyal-hero.jpg.jpeg"
+      src="https://firyaltravels.github.io/learn-indonesian-with-firyal/firyal-hero.jpg.jpeg"
       alt="Firyal - Indonesian language tutor"
       class="hero-photo"
     >
 
   </div>
-
 </header>
 
 <!-- ABOUT ME -->
 
 <section id="about">
-
   <div class="container about-grid">
 
-    <div class="about-image-placeholder">
+    <div class="about-placeholder">
       YOUR ABOUT ME PHOTO GOES HERE
     </div>
 
     <div class="about-content">
-
-      <div class="eyebrow">
-        A Little About Me
-      </div>
+      <div class="eyebrow">A Little About Me</div>
 
       <h2>Hi, I'm Firyal.</h2>
 
@@ -531,44 +515,29 @@ footer {
       <div class="about-highlight">
         An engineer by profession, a language tutor by passion.
       </div>
-
     </div>
 
   </div>
-
 </section>
 
 <!-- CLASSES -->
 
 <section id="classes" class="classes">
-
   <div class="container">
 
     <div class="section-top">
-
-      <div class="eyebrow">
-        Find Your Learning Style
-      </div>
-
+      <div class="eyebrow">Find Your Learning Style</div>
       <h2>Classes designed around you.</h2>
-
       <p>
         Whether you prefer personalised attention or learning
         with others, there's a class for you.
       </p>
-
     </div>
 
     <div class="classes-grid">
 
-      <!-- PRIVATE LESSONS -->
-
       <div class="class-card">
-
-        <div class="eyebrow">
-          01 / Personal Learning
-        </div>
-
+        <div class="eyebrow">01 / Personal Learning</div>
         <h3>Private Lessons</h3>
 
         <p class="desc">
@@ -576,9 +545,7 @@ footer {
           goals, interests and learning pace.
         </p>
 
-        <div class="price">
-          $100 <small>/ month</small>
-        </div>
+        <div class="price">$100 <small>/ month</small></div>
 
         <ul class="features">
           <li>8 sessions per month</li>
@@ -591,17 +558,10 @@ footer {
         <a class="button" href="#booking">
           Book Private Lessons ↗
         </a>
-
       </div>
 
-      <!-- GROUP LESSONS -->
-
       <div class="class-card">
-
-        <div class="eyebrow">
-          02 / Learn Together
-        </div>
-
+        <div class="eyebrow">02 / Learn Together</div>
         <h3>Group Lessons</h3>
 
         <p class="desc">
@@ -609,9 +569,7 @@ footer {
           practise Indonesian together.
         </p>
 
-        <div class="price">
-          $50 <small>/ person / month</small>
-        </div>
+        <div class="price">$50 <small>/ person / month</small></div>
 
         <ul class="features">
           <li>8 sessions per month</li>
@@ -624,34 +582,24 @@ footer {
         <a class="button" href="#booking">
           Join a Group ↗
         </a>
-
       </div>
 
     </div>
-
   </div>
-
 </section>
 
 <!-- LEARNING PREVIEW -->
 
 <section id="preview">
-
   <div class="container">
 
     <div class="section-top">
-
-      <div class="eyebrow">
-        A Glimpse Into Our Lessons
-      </div>
-
+      <div class="eyebrow">A Glimpse Into Our Lessons</div>
       <h2>Learn beyond the textbook.</h2>
-
       <p>
         Explore practical Indonesian, everyday expressions
         and the culture that makes the language unique.
       </p>
-
     </div>
 
     <div class="preview-grid">
@@ -669,55 +617,37 @@ footer {
       </div>
 
     </div>
-
   </div>
-
 </section>
 
 <!-- TESTIMONIALS -->
 
 <section>
-
   <div class="container">
 
     <div class="section-top">
-
-      <div class="eyebrow">
-        Student Experiences
-      </div>
-
+      <div class="eyebrow">Student Experiences</div>
       <h2>Every learning journey is different.</h2>
-
       <p>
         A space for real stories and feedback from students.
       </p>
-
     </div>
 
     <div class="testimonial-box">
-
       Student testimonials will be featured here soon.
-
       <br><br>
-
       <strong>Have been learning with Firyal?</strong>
-
       Your experience might inspire someone else's
       Indonesian learning journey.
-
     </div>
 
   </div>
-
 </section>
 
 <!-- BOOKING -->
 
 <section class="booking" id="booking">
-
-  <div class="eyebrow">
-    Your Next Chapter Starts Here
-  </div>
+  <div class="eyebrow">Your Next Chapter Starts Here</div>
 
   <h2>Ready to learn Indonesian?</h2>
 
@@ -735,21 +665,13 @@ footer {
   >
     Let's Talk on WhatsApp ↗
   </a>
-
 </section>
 
 <!-- FOOTER -->
 
 <footer class="container">
-
-  <span>
-    © 2026 Learn Indonesian with Firyal.
-  </span>
-
-  <span>
-    Speak naturally. Connect culturally.
-  </span>
-
+  <span>© 2026 Learn Indonesian with Firyal.</span>
+  <span>Speak naturally. Connect culturally.</span>
 </footer>
 
 </body>
