@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Indonesian with Firyal</title>
+<meta name="description" content="Learn Indonesian with Firyal. Speak naturally. Connect culturally. Personal online Indonesian lessons for all levels.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #f8f6f0;
+  --sand: #e9e2d4;
+  --olive: #737b5b;
+  --dark: #292b24;
+  --muted: #77776d;
+  --white: #fffefa;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #e8e4da;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.nav-links a:hover { color: var(--olive); }
+
+.button {
+  display: inline-block;
+  background: var(--olive);
+  color: white;
+  padding: 13px 25px;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: .2s;
+}
+
+.button:hover { background: var(--dark); }
+
+.hero {
+  padding: 110px 8% 100px;
+  text-align: center;
+  background: var(--sand);
+}
+
+.eyebrow {
+  color: var(--olive);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 7vw, 82px);
+  line-height: 1.12;
+  margin: 25px auto;
+  max-width: 850px;
+}
+
+.hero h1 em { color: var(--olive); }
+
+.hero p {
+  max-width: 520px;
+  margin: 0 auto 32px;
+  color: #65655b;
+  font-size: 15px;
+}
+
+.hero-note {
+  margin-top: 22px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+section { padding: 90px 8%; }
+
+.section-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 48px;
+}
+
+.section-heading h2 {
+  font-size: clamp(35px, 5vw, 50px);
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.photo-placeholder {
+  background: #ded8c9;
+  min-height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777568;
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.about-text h2 {
+  font-size: 43px;
+  margin: 15px 0 20px;
+}
+
+.about-text p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.classes { background: var(--white); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid #e6e2d8;
+  padding: 38px;
+  background: var(--cream);
+}
+
+.card h3 { font-size: 29px; margin: 15px 0 8px; }
+
+.card .description {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.price {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 28px;
+  font-size: 13px;
+}
+
+.card li { padding: 7px 0; }
+
+.card li::before {
+  content: "✓";
+  color: var(--olive);
+  margin-right: 10px;
+}
+
+.preview {
+  background: var(--sand);
+  text-align: center;
+}
+
+.video-placeholder {
+  max-width: 700px;
+  margin: 35px auto 0;
+  min-height: 270px;
+  background: #d8d1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: #777568;
+  padding: 25px;
+}
+
+.play {
+  font-size: 40px;
+  color: var(--olive);
+}
+
+.testimonials {
+  background: var(--white);
+}
+
+.quote {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: #69695e;
+}
+
+.booking {
+  text-align: center;
+  background: var(--olive);
+  color: white;
+}
+
+.booking .eyebrow { color: #e4e4d6; }
+.booking h2 { font-size: 48px; margin: 15px 0; }
+.booking p { max-width: 500px; margin: 0 auto 28px; font-size: 14px; color: #eeeee5; }
+.booking .button { background: var(--cream); color: var(--dark); }
+
+footer {
+  padding: 30px 8%;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media(max-width: 700px) {
+  nav { padding: 20px 5%; }
+  .nav-links { gap: 12px; font-size: 11px; }
+  .nav-links .hide-mobile { display: none; }
+  .hero { padding: 85px 6%; }
+  section { padding: 70px 6%; }
+  .about-grid, .cards { grid-template-columns: 1fr; gap: 30px; }
+  .photo-placeholder { min-height: 300px; }
+  .about-text h2 { font-size: 36px; }
+  .card { padding: 28px; }
+  .booking h2 { font-size: 38px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#" class="logo">Learn Indonesian with Firyal.</a>
+  <div class="nav-links">
+    <a href="#about" class="hide-mobile">About</a>
+    <a href="#classes">Classes</a>
+    <a href="#preview" class="hide-mobile">Preview</a>
+    <a href="#booking">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">Your Indonesian Learning Journey Starts Here</div>
+  <h1>Speak naturally.<br><em>Connect culturally.</em></h1>
+  <p>
+    Learn Indonesian in a relaxed, personal and engaging way.
+    Whether you're a complete beginner or looking to improve
+    your fluency, let's make learning Bahasa Indonesia enjoyable.
+  </p>
+  <a class="button" href="#classes">Explore My Classes</a>
+  <div class="hero-note">BEGINNER · INTERMEDIATE · ADVANCED</div>
+</header>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="photo-placeholder">
+      YOUR PHOTO GOES HERE
+    </div>
+    <div class="about-text">
+      <div class="eyebrow">A Little About Me</div>
+      <h2>Hi, I'm Firyal!</h2>
+      <p>
+        I'm an Indonesian language tutor who loves helping
+        people discover the beauty of Bahasa Indonesia.
+      </p>
+      <p>
+        My lessons focus on practical communication,
+        everyday expressions and cultural understanding.
+        I want you to feel comfortable making mistakes,
+        asking questions and speaking with confidence.
+      </p>
+      <p>
+        Let's learn Indonesian together, one conversation at a time.
+      </p>
+      <a class="button" href="#booking">Let's Connect</a>
+    </div>
+  </div>
+</section>
+
+<section id="classes" class="classes">
+  <div class="section-heading">
+    <div class="eyebrow">Learn at Your Own Pace</div>
+    <h2>My Classes</h2>
+    <p>Choose the learning experience that works best for you.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="eyebrow">Personal Learning</div>
+      <h3>Private Lessons</h3>
+      <p class="description">One-on-one Indonesian lessons designed around your goals.</p>
+      <div class="price">$100 <span>/ month</span></div>
+      <ul>
+        <li>8 sessions per month</li>
+        <li>50 minutes per session</li>
+        <li>Personalised learning materials</li>
+        <li>Flexible learning focus</li>
+      </ul>
+      <a class="button" href="#booking">Book Private Lessons</a>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Learn Together</div>
+      <h3>Group Lessons</h3>
+      <p class="description">A fun and interactive small-group learning experience.</p>
+      <div class="price">$50 <span>/ person / month</span></div>
+      <ul>
+        <li>8 sessions per month</li>
+        <li>50 minutes per session</li>
+        <li>3–5 students per group</li>
+        <li>Interactive speaking practice</li>
+      </ul>
+      <a class="button" href="#booking">Join a Group</a>
+    </div>
+  </div>
+</section>
+
+<section id="preview" class="preview">
+  <div class="section-heading">
+    <div class="eyebrow">Take a Little Look</div>
+    <h2>Learning Preview</h2>
+    <p>Get a feel for my teaching style and the way we learn together.</p>
+  </div>
+  <div class="video-placeholder">
+    <div class="play">▶</div>
+    <strong>Video lessons coming soon</strong>
+    <span>Meet Firyal · Mini Indonesian Lessons</span>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="section-heading">
+    <div class="eyebrow">Kind Words</div>
+    <h2>Student Experiences</h2>
+    <p>A little space for stories and feedback from my students.</p>
+  </div>
+  <div class="quote">
+    "Your journey with Indonesian deserves a learning experience
+    that feels personal, comfortable and fun."
+  </div>
+</section>
+
+<section id="booking" class="booking">
+  <div class="eyebrow">Let's Start Learning</div>
+  <h2>Ready to speak Indonesian?</h2>
+  <p>
+    Have questions or want to book your first lesson?
+    Send me a message and let's find the right class for you.
+  </p>
+  <a class="button" target="_blank" rel="noopener"
+     href="https://wa.me/6281334260332?text=Hi%20Firyal!%20I%27m%20interested%20in%20your%20Indonesian%20lessons.%20I%27d%20like%20to%20know%20more%20about%20the%20classes.">
+    Book a Lesson via WhatsApp ↗
+  </a>
+</section>
+
+<footer>
+  © 2026 Learn Indonesian with Firyal. Made with care.
+</footer>
+
+</body>
+</html>
